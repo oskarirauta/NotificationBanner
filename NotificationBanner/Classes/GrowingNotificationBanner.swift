@@ -95,7 +95,7 @@ public class GrowingNotificationBanner: BaseNotificationBanner {
     private var rightView: UIView?
     
     /// Square size for left/right view if set
-    private let iconSize: CGFloat = 24.0
+    private var iconSize: CGFloat = 24.0
     
     /// Font used for the title label
     internal var titleFont: UIFont = UIFont.systemFont(ofSize: 17.5, weight: UIFont.Weight.bold)
@@ -109,11 +109,13 @@ public class GrowingNotificationBanner: BaseNotificationBanner {
                 rightView: UIView? = nil,
                 style: BannerStyle = .info,
                 colors: BannerColorsProtocol? = nil,
-                iconPosition: IconPosition = .center) {
+                iconPosition: IconPosition = .center,
+                iconSize: CGFloat = 24.0) {
         
         self.leftView = leftView
         self.rightView = rightView
-        
+        self.iconSize = iconSize
+
         super.init(style: style, colors: colors)
         
         let labelsView = UIStackView()
