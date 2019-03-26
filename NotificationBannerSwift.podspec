@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'NotificationBannerSwift'
-    s.version          = '2.0.6'
+    s.version          = '2.0.7'
     s.summary          = 'The easiest way to display in app notification banners in iOS.'
 
     s.description      = <<-DESC
@@ -13,7 +13,7 @@ NotificationBanner is an extremely customizable and lightweight library that mak
     s.author           = { 'Daltron' => 'daltonhint4@gmail.com' }
     s.source           = { :git => 'https://github.com/Daltron/NotificationBanner.git', :tag => s.version.to_s }
 
-    s.ios.deployment_target = '12.2'
+    s.ios.deployment_target = '12.1'
 
     s.swift_version = '5.0'
     s.source_files = 'NotificationBanner/Classes/**/*'
