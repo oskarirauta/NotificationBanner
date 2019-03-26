@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'NotificationBannerSwift'
-    s.version          = '2.0.5'
+    s.version          = '2.0.6'
     s.summary          = 'The easiest way to display in app notification banners in iOS.'
 
     s.description      = <<-DESC
@@ -19,6 +19,6 @@ NotificationBanner is an extremely customizable and lightweight library that mak
     s.source_files = 'NotificationBanner/Classes/**/*'
 
     s.dependency 'SnapKit', '~> 4.2.0'
-    s.dependency 'MarqueeLabel'
+    s.dependency 'MarqueeLabel/Swift'
 
 end
